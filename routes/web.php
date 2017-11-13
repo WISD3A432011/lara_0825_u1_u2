@@ -50,12 +50,12 @@ Route::get('/test', function () {
         'content'=>'updated content',
     ]);
 */
-/*
+
     $post= \App\Post::find(1);
     $post->title= 'saved title';
     $post->content= 'saved content';
     $post->save();
-*/
+
 /*
     $post= \App\Post::find(1);
     $post->delete();
@@ -72,8 +72,10 @@ Route::get('/test', function () {
     $featuredPosts= \App\Post::where('is_feature',1)->get();
     dd($featuredPosts);
 */
+/*
     $fourthPost = \App\Post::find(4);
     dd($fourthPost);
     $lastPost = \App\Post::orderBy('id','DESC') ->first();
     dd($lastPost);
+*/
 });
