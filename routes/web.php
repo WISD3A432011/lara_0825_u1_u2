@@ -50,8 +50,12 @@ Route::get('/test', function () {
         'content'=>'updated content',
     ]);
 */
+/*
     $post= \App\Post::find(1);
     $post->title= 'saved title';
     $post->content= 'saved content';
     $post->save();
+*/
+    $post= \App\Post::find(1);
+    $post->delete();
 });
